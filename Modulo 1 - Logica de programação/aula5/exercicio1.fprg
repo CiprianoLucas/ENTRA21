@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lucas Cipriano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-18 09:02:48 "/>
+        <attribute name="created" value="THVjYXMgQ2lwcmlhbm87REVTS1RPUC1RTVRFUlExOzIwMjMtMDgtMTg7IjA4OjU3OjMzICI7MzY2OA=="/>
+        <attribute name="edited" value="THVjYXMgQ2lwcmlhbm87REVTS1RPUC1RTVRFUlExOzIwMjMtMDgtMTg7IjA5OjAyOjQ4ICI7MTszNzcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroA" type="Integer" array="False" size=""/>
+            <declare name="numeroB" type="Integer" array="False" size=""/>
+            <declare name="operacao" type="String" array="False" size=""/>
+            <input variable="numeroA"/>
+            <input variable="numeroB"/>
+            <input variable="operacao"/>
+            <if expression="operacao = &quot;+&quot;">
+                <then>
+                    <output expression="numeroA + numeroB" newline="True"/>
+                </then>
+                <else>
+                    <if expression="operacao = &quot;-&quot;">
+                        <then>
+                            <output expression="numeroA - numeroB" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="operacao = &quot;*&quot;">
+                                <then>
+                                    <output expression="numeroA * numeroB" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="operacao = &quot;/&quot;">
+                                        <then>
+                                            <output expression="numeroA / numeroB" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Opera&#231;&#227;o inv&#225;lida&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

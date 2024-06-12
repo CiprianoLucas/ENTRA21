@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="static/js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="static/css/kanban.css">
+    <title>Kanban</title>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="text-center">A fazer</h3>
+                <div class="kanban-column">
+                    <!-- serão os itens a fazer -->
+                    <div class="kanban-item">
+                        <span>Tarefa 01</span>
+                        <div class="d-flex column-gap-2">
+                            <button class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="bi bi-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Em Processo</h3>
+                <div class="kanban-column">
+                    <!-- serão os itens a fazer -->
+                    <div class="kanban-item">
+                        <span>Tarefa 01</span>
+                        <div class="d-flex column-gap-2">
+                            <button class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="bi bi-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Concluído</h3>
+                <div class="kanban-column">
+                    <!-- serão os itens a fazer -->
+                    <div class="kanban-item">
+                        <span>Tarefa 01</span>
+                        <div class="d-flex column-gap-2">
+                            <button class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                            <button class="btn btn-danger btn-sm">
+                                <i class="bi bi-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary btn-lg add-task-button">
+        <i class="bi bi-plus"></i>
+    </button>
+</body>
+
+</html>

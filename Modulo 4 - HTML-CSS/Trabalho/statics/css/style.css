@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700;900&family=Open+Sans&family=Source+Sans+3:wght@200&display=swap');
+
+/* font-family: 'Exo 2', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Sans 3', sans-serif; */
+
+html {
+    font-size: 16px;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to bottom, #181818, #363636);
+    /* linear-gradient define um gradiente linear de vermelho (#ff0000) para azul (#0000ff)
+       'to right' indica a direção do gradiente (da esquerda para a direita) */
+    color: #165c7d;
+    text-align: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+h4 {
+        font-size: 1.5rem;
+
+}
+
+
+p{
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    max-width: 500px;
+}
+
+.container {
+    display: flexbox;
+    margin: 0.5em;
+    justify-content: center;
+
+}
+
+.header__index{
+    background-image: url(/statics/img/aviao.png);
+    background-size: cover;
+    background-color: #00a9ce;
+    color: white;
+    border: 3px #0a425c solid;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1em;
+
+    opacity: 0;
+    animation:
+        spin 2s 0.5s forwards ease,
+        fade-in 2s 0.5s forwards ease;
+}
+
+.header__index i{
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    padding: 0.5em;
+    margin-bottom: 15px;
+    font-size: 3rem;
+
+    transform: rotate(-30deg);
+    opacity: 0;
+    animation:
+        spin 1s 0.5s forwards ease,
+        fade-in 1s 0.5s forwards ease;
+}
+
+.header__index p{
+    display: inline-block;
+}
+
+.nav__index{
+    position: relative;
+    color: white;
+   
+}
+
+.nav__index ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+    list-style: none;
+    margin-top: 2px;
+}
+
+.nav__index ul li{
+    margin-top: 2px;
+
+    
+}
+
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.atalho--1 {
+    display: none;
+}
+
+/* .atalho--1{
+    display: block;
+    border: 3px #886b25 solid;
+    background-color: #ffa300;
+    font-size: 1.5rem;
+    padding: 0.5em;
+} */
+
+.atalho--2{
+    display: block;
+    border: 3px #007041 solid;
+    color: white;
+    background-color: #00b140;
+    font-size: 1.5rem;
+    padding: 0.5em; 
+
+    opacity: 0;
+    animation:
+        fade-in 0.5s 1.5s forwards ease;
+
+}
+
+.atalho--3{
+    display: block;
+    border: 3px #007dba solid;
+    color: white;
+    background-color: #00a9ce;
+    font-size: 1.5rem;
+    padding: 0.5em; 
+
+    opacity: 0;
+    animation:
+        fade-in 1s 1.5s forwards ease;
+}
+.atalho--4{
+    display: block;
+    border: 3px #886b25 solid;
+    color: white;
+    background-color: #ffa300;
+    font-size: 1.5rem;
+    padding: 0.5em; 
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1.5s 1.5s forwards ease;
+}
+
+.viagem {
+    display: block;
+    background-color: #00b140;
+    color: white;
+    border: 3px #007041 solid;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1s 2s forwards ease;
+}
+
+.fade_1s{
+    opacity: 0;
+    animation:
+        fade-in 1s 0.7s forwards ease;
+}
+
+.viagem div{
+    border-top: 1px white solid;
+    border-top: 1px white solid;
+}
+
+.viagem i {
+    display: flexbox;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 10px;
+    font-size: 1.3rem;
+    
+}
+
+.viagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.viagem > i:first-of-type {
+    display: flexbox;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    
+}
+
+.viagem div p{
+    text-align: justify;
+    text-indent: 3em;
+}
+
+.viagem > p:first-of-type {
+
+    margin: 0 auto 2em
+}
+
+.viagem h2 {
+    display: flexbox;
+    font-size: 2em;
+}
+
+
+
+.viagem h3 {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0.5em;
+}
+
+.img {
+    display: block;
+    border: 4px double rgb(219, 219, 219, 0.5);
+    border-radius: 5%;
+    margin: 1em 0;
+    width: 20em;
+
+}
+
+.viagem--segundo {
+    background-color: #00a9ce;
+    border: 3px #165c7d solid;
+}
+
+.viagem--terceiro {
+    background-color: #ffa300;
+    border: 3px #886b25 solid;
+}
+
+.viagem--terceiro div {
+    margin-top: 1em;
+
+}
+
+footer {
+    justify-content: center;
+    color: white;
+}
+
+footer a{
+    display: block;
+    border: 3px #886b25 solid;
+    font-size: 1.5rem;
+    background-color: #ffa300;
+    padding: 0.5em; 
+    border-radius: 0.5em;
+}
+
+footer p{
+    display: inline-block;
+    font-size: 14px;
+    color: grey;
+}
+
+.button {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: 3px solid #ffffff;
+    border-radius: 0.6em;
+    padding: 0.4em;
+    margin: 2em;
+}
+
+.selecionado:hover {
+    opacity: 80%;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header__viagem {
+    color: white;
+    background-color: #165c7d;
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    z-index: 1;
+    position: sticky;
+    top: 0;       
+}
+
+.header__viagem div{
+    display: block;
+    padding-top: 0.3em;
+}
+
+
+.header__viagem div:last-of-type {
+    border-left: white 1px solid;
+    padding: 1em 0.5em;
+}
+
+.header__viagem--logo {
+    border: 0.1em solid #ffffff;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 0.3em;
+    margin-left: 1em;
+    font-size: 0.9rem;
+}
+
+.header__viagem--contact {
+    border: 0.1em solid #ffffff;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 0.3em;
+    margin-right: 0.5em;
+}
+
+.header__viagem--name h1{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.nav__viagem {
+    display: block;
+    color: black;
+    background-color: #165c7d;
+    border: 3px #0a425c solid;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    opacity: 0;
+    animation:
+        fade-in 1s 0.5s forwards ease;
+
+}
+
+.nav__viagem ul{
+    border-color: #0a425c;
+    border-bottom-left-radius: 0.78em;
+    border-bottom-right-radius: 0.78em;
+    color: white;
+    list-style: none;
+    padding: 0em 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav__viagem li {
+    width: 30%;
+    height: 40px;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.atalho--turista{ 
+    border: 3px #007041 solid;
+    background-color: #00b140;
+}
+.atalho--minha{
+    border: 3px #007dba solid;
+    background-color: #00a9ce;
+}
+.atalho--plus{
+    font-size: 1.2rem;
+    border: 3px #886b25 solid;
+    background-color: #ffa300;
+}
+
+.atalho--plus i{
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 0.3em;
+    margin-top: 0.2em;
+}
+
+
+.nav__viagem > div > i {
+    border: 0.1em solid white;
+    font-size: 2.2em;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 0.1em;
+    margin-right: 0.3em;
+    display: inline-block
+}
+
+.nav__viagem h2 {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.nav__viagem div{
+    color: white;
+    border-bottom: 2px #0a425c solid;
+    font-size: 0.8rem;
+}
+
+.comentarios dl{
+    background-color: white;
+    border: 2px rgb(206, 206, 206) solid;
+    border-radius: 1em;
+    margin: 0;
+    padding: 0.5em 1em;
+    color: grey;
+    text-align: left;
+}
+
+.comentarios dt{
+    border-top: 1px #e0e0e0 solid;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em 0 0.2em 0;
+    color: #505050;
+}
+
+.comentarios dd{
+    padding-bottom: 0.5em;
+}
+
+.comentarios dt:first-of-type{
+    border-top: none;
+}
+
+.header__contato{
+    color: white;
+    background-color: #165c7d;
+    text-align: left;
+    display: block;
+    align-items: start;
+    justify-content: space-between;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    
+       
+}
+
+.header__contato div{
+    display: block;
+    padding-top: 0.3em;
+}
+
+.header__contato i{
+    border: 0.1em solid #ffffff;
+    border-radius: 100%;
+    padding: 0.4em;
+    margin: 0.5em;
+    margin-left: 1em;
+    font-size: 0.9rem;
+}
+
+.header__contato h1{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.formulario{
+
+    background-color: #00b140;
+    color: white;
+    border: 3px #007041 solid;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1s forwards ease;
+}
+
+.formulario i {
+    display: inline-block;
+    border: 0.1em solid #ffffff;
+    border-radius: 100%;
+    padding: 0.3em;
+    margin: 0.3em;
+    margin-left: 1em;
+    font-size: 2rem;
+}
+
+.formulario h2{
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario select{
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.formulario option{
+    font-size: 0.8rem;
+}
+
+
+.formulario label{
+    font-size: 1.5rem;
+    margin-bottom: 0.15em;
+    text-align: left;
+}
+
+.formulario input{
+    font-size: 1rem;
+    margin-bottom: 1em;  
+
+}
+
+.formulario #mensagem{
+    height: 8em;
+
+}
+
+.formulario button{
+    background-color: inherit;
+}
+
+.formulario input, textarea, select{
+    border: #aaaaaa 1px solid;
+    border-radius: 1em;
+    text-indent: 1em;
+    padding: 0.5em 1em;
+    
+}
+
+.redes__sociais {
+    background-color: #00a9ce;
+    color: white;
+    border: 3px #007dba solid;
+    border-radius: 1em;
+    padding: 0.4em;
+    margin-bottom: 1rem;
+
+    opacity: 0;
+    animation:
+        fade-in 1s 1s forwards ease;
+    
+}
+
+.redes__sociais ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline-start: 0;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.redes__sociais li{
+    padding: 0.2em;
+    border-left: rgba(226, 226, 226, 0.253) 1px solid;
+    opacity: 0;
+    animation:
+        fade-in 1s 1.5s forwards ease;
+}
+
+
+
+.redes__sociais li:first-of-type {
+    border-left: none;
+}
+
+
+@media screen and (min-width: 735px) {
+
+    .viagem h3{
+        font-size: 2rem;
+    }
+
+    .viagem i{
+        font-size: 2rem;
+    }
+
+
+    .header__index{
+        background-image: url(/statics/img/paisagem.png);
+        background-size: cover;
+        background-position: bottom;
+        background-color: #00a9ce;
+        color: white;
+        border: 3px #0a425c solid;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        padding: 1em;
+    }
+
+    .nav__index{
+        background-color: #18181859;
+        display: block;
+        z-index: 1;
+        position: sticky;
+        top: -2px;
+        
+    }
+
+    .nav__index ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav__index li{
+        width: 33%;
+    }
+
+    .atalho--2{
+        border-bottom-left-radius: 0.5em;
+    }
+
+    .atalho--4{
+        border-bottom-left-radius: 0;
+    }
+
+    .viagem div{
+        display: inline-block;
+        flex-direction: column;
+    }
+    
+    .viagem div i{
+        margin: 1em 0 1em 30%;
+        flex-direction: row;
+
+    }
+
+    .viagem div h3{
+        margin: 1em 30% 1em 1em;
+        flex-direction: row;
+    }
+
+    .inverter p{
+        order: -1;
+    }
+
+    .inverter_img img{
+        order: -1;
+    }
+    
+    .nav__viagem div{
+        border-radius: 1em;
+    }
+
+    .nav__viagem ul{
+        display: none;
+    }
+
+
+    .viagem span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .viagem .img {
+        width: 50%;
+        margin: 1em;
+    }
+
+    .viagem p {
+        margin: 3em;
+        width: 40%;
+    }
+
+    .map{
+        height: 450px;
+    }
+
+    .video{
+        height: 450px;
+    }
+
+    /* .viagem--terceiro h3{
+        margin: 1em
+    } */
+
+    #video , #localizacao, #comentarios{
+        margin: 1em;
+    }
+
+    .redes__sociais ul{
+        justify-content: space-around;
+    }
+
+    .redes__sociais li{
+        border: none;
+    }
+
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}

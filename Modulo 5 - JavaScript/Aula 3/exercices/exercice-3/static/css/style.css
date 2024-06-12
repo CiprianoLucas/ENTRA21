@@ -1,0 +1,13 @@
+button, p{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+button{
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+}

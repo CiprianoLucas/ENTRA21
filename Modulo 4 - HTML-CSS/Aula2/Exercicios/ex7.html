@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+
+</head>
+<body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+    <form method="post">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+
+
+                <label for="name">Nome do aluno:</label>
+                <input type="text" id="name"><br><br>
+
+                <label for="data">Nascimento</label>
+                <input type="date" id="data"><br><br>
+
+                <label for="mae">Nome da Mãe:</label>
+                <input type="text" id="mae"><br><br>
+
+                <label for="pai">Nome do Pai:</label>
+                <input type="text" id="pai"><br><br>
+
+                <label for="tell">Telefone:</label>
+                <input type="tel" id="tell"><br><br><br>
+
+
+            </fieldset>
+            <fieldset>
+
+            <legend>Informações da Matrícula:</legend>
+
+
+                <label for="serie">Série</label><br>
+                <select name="serie" id="serie">
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="pe">Pré-escola</option>
+                    <option value="ef">Ensino Fundamental</option>
+                    <option value="em">Ensino Médio</option>
+
+                </select><br><br>
+               
+                <label for="serie">Turno</label><br>
+                <input type="radio" name="Turno" id="manha" value="Manhã">
+                <label for="manha">Manhã</label>
+                <input type="radio" name="Turno" id="tarde" value="Tarde">
+                <label for="tarde">Tarde</label>
+
+                <p>Atividades extracurriculares:</p>
+                <input type="checkbox" name="informatica" id="informatica">
+                <label for="csharp">Informática</label><br>
+                <input type="checkbox" name="musica" id="musica">
+                <label for="java">Música</label><br>
+                <input type="checkbox" name="balet" id="balet">
+                <label for="python">Balet</label><br>
+                <input type="checkbox" name="pintura" id="pintura">
+                <label for="javascript">Pintura</label><br>
+                <input type="checkbox" name="judo" id="judo">
+                <label for="ruby">Judo</label><br>
+                <input type="checkbox" name="futebol" id="futebol">
+                <label for="go">Futebol</label><br>
+
+
+        </fieldset>
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpa Campos</button>
+</form>
+</body>
+</html>

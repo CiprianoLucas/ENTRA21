@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/jquery-3.7.1.min.js"></script>
+    <title>Exercício 5</title>
+</head>
+<body>
+    <table id="peopleTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+            <tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(() => {
+        const people = [
+            { id: 1, name: "Ana", age: 23, sex: "F" },
+            { id: 2, name: "Maria", age: 42, sex: "F" },
+            { id: 3, name: "João", age: 15, sex: "M" },
+            { id: 4, name: "Matheus", age: 19, sex: "M" },
+            { id: 5, name: "Antônio", age: 40, sex: "M" },
+        ];
+            const $tbody = $("#peopleTable tbody");
+
+            /**Formada o sexo da pessoa
+             * @param {string} sex - O sexo abreviado
+             * @returns {string}
+            */
+            const formatSex = sex => sex === "M" ? "Masculino" : "Feminino"
+
+            $.each(people, (_, person) => {
+                const $row = $(`<tr>
+                    <td>${person.id}</td>
+                    <td>${person.name}</td>
+                    <td>${person.age}</td>
+                    <td>${formatSex(person.sex)}</td>
+                    </tr>`)
+            
+
+            $tbody.append($row);
+        })
+    });
+    </script>
+</body>
+</html>
